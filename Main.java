@@ -32,7 +32,7 @@ public class Main {
 
         //Доп опции
         //-o  путь для результатов
-        String path = "";
+        String path = "/";
         //-p задает префикс
         String prefix = "";
         //-s краткая статистика
@@ -44,7 +44,7 @@ public class Main {
 
         for (int i = 0; i < Commands.length; i++) {
             if (Commands[i].equals("-o")) {
-                path = Commands[i + 1] + "/";
+                path = Commands[i + 1] + path;
             }
             if (Commands[i].equals("-p")) {
                 prefix = Commands[i + 1];
